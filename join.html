@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArtisanMarket - Join As Artisan</title>
+        <link rel="stylesheet" href="landingstyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #121212;
+                font-family: 'Inter', sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #FFFFFF;
+            }
+            
+            .join-header {
+                text-align: center;
+                padding: 80px 20px 40px;
+            }
+            
+            .join-title {
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                color: #FFFFFF;
+            }
+            
+            .join-subtitle {
+                font-size: 18px;
+                color: #CCCCCC;
+                max-width: 700px;
+                margin: 0 auto 50px;
+                line-height: 1.6;
+            }
+            
+            .benefits-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto 80px;
+                padding: 0 20px;
+            }
+            
+            .benefit-card {
+                background-color: #2F2F2F;
+                border-radius: 15px;
+                padding: 30px;
+                text-align: center;
+            }
+            
+            .benefit-icon {
+                font-size: 40px;
+                color: #EAB308;
+                margin-bottom: 20px;
+            }
+            
+            .benefit-title {
+                font-size: 20px;
+                font-weight: 600;
+                color: #FFFFFF;
+                margin-bottom: 15px;
+            }
+            
+            .benefit-text {
+                font-size: 16px;
+                color: #CCCCCC;
+                line-height: 1.6;
+            }
+            
+            .application-section {
+                max-width: 800px;
+                margin: 0 auto 100px;
+                padding: 0 20px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+                font-weight: 600;
+                color: #FFFFFF;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            
+            .application-steps {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-bottom: 50px;
+            }
+            
+            .step {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            
+            .step-number {
+                background-color: #EAB308;
+                color: #121212;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                flex-shrink: 0;
+            }
+            
+            .step-content {
+                flex-grow: 1;
+            }
+            
+            .step-title {
+                font-size: 20px;
+                font-weight: 600;
+                color: #FFFFFF;
+                margin-bottom: 10px;
+            }
+            
+            .step-text {
+                font-size: 16px;
+                color: #CCCCCC;
+                line-height: 1.6;
+            }
+            
+            .form-container {
+                background-color: #2F2F2F;
+                border-radius: 15px;
+                padding: 40px;
+                margin-top: 50px;
+            }
+            
+            .form-group {
+                margin-bottom: 25px;
+            }
+            
+            .form-label {
+                display: block;
+                font-size: 16px;
+                font-weight: 500;
+                color: #FFFFFF;
+                margin-bottom: 8px;
+            }
+            
+            .form-input {
+                width: 100%;
+                padding: 12px 15px;
+                border-radius: 8px;
+                border: 1px solid #444;
+                background-color: #1E1E1E;
+                color: #FFFFFF;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+            }
+            
+            .form-input:focus {
+                outline: none;
+                border-color: #EAB308;
+            }
+            
+            textarea.form-input {
+                min-height: 120px;
+                resize: vertical;
+            }
+            
+            .submit-button {
+                background-color: #EAB308;
+                color: #FFFFFF;
+                border: none;
+                padding: 15px 30px;
+                border-radius: 30px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+            .submit-button:hover {
+                background-color: #F59E0B;
+            }
+            
+            .testimonial-section {
+                max-width: 1200px;
+                margin: 0 auto 100px;
+                padding: 0 20px;
+            }
+            
+            .testimonial-card {
+                background-color: #2F2F2F;
+                border-radius: 15px;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .testimonial-image {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+            
+            .testimonial-text {
+                font-size: 18px;
+                color: #FFFFFF;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                max-width: 800px;
+            }
+            
+            .testimonial-name {
+                font-size: 18px;
+                font-weight: 600;
+                color: #EAB308;
+                margin-bottom: 5px;
+            }
+            
+            .testimonial-location {
+                font-size: 16px;
+                color: #CCCCCC;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: flex;justify-content: space-between;align-items: center;margin-top: -30px;margin-left: 20px;vertical-align: middle;">
+            <h6 style="font-size: x-large;color: #FFFFFF;">ArtisanMarket</h6>
+            <div style="display: flex;color:#FFFFFF;">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <div class="navbuttons" style="padding: 20px;">
+                        Home
+                    </div>
+                </a>
+                <a href="products.html" style="text-decoration: none; color: inherit;">
+                    <div class="navbuttons" style="padding: 20px;">
+                        Products
+                    </div>
+                </a>
+                <div class="navbuttons" style="padding: 20px;">
+                    How It Works
+                </div>
+                <div class="navbuttons" style="padding: 20px;">
+                    Impact
+                </div>
+                <div class="navbuttons" style="padding: 20px;">
+                    Join As Artisan
+                </div>
+                <div class="navbuttons" style="padding: 20px; border: 2px dotted #EAB308;border-radius: 40px;display: inline-block;">
+                    Contact
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="join-header">
+            <h1 class="join-title">Join Our Global Community of Artisans</h1>
+            <p class="join-subtitle">
+                Showcase your craftsmanship to the world, earn fair wages, and preserve your cultural heritage through ArtisanMarket's global marketplace.
+            </p>
+        </div>
+        
+        <div class="benefits-container">
+            <div class="benefit-card">
+                
+                <h3 class="benefit-title">Fair Compensation</h3>
+                <p class="benefit-text">
+                    Receive 80-90% of each sale directly, with transparent pricing that values your skills and time appropriately.
+                </p>
+            </div>
+            
+            <div class="benefit-card">
+                
+                <h3 class="benefit-title">Global Reach</h3>
+                <p class="benefit-text">
+                    Access customers worldwide who appreciate authentic, handcrafted goods and cultural traditions.
+                </p>
+            </div>
+            
+            <div class="benefit-card">
+                
+                <h3 class="benefit-title">Protect Your Craft</h3>
+                <p class="benefit-text">
+                    We help preserve traditional techniques by connecting them with audiences that value their cultural significance.
+                </p>
+            </div>
+            
+            <div class="benefit-card">
+                
+                <h3 class="benefit-title">Logistics Support</h3>
+                <p class="benefit-text">
+                    We handle international shipping, customs, and customer service so you can focus on creating.
+                </p>
+            </div>
+            
+            <div class="benefit-card">
+                
+                <h3 class="benefit-title">Digital Tools</h3>
+                <p class="benefit-text">
+                    Get free training on product photography, storytelling, and managing your online storefront.
+                </p>
+            </div>
+            
+            <div class="benefit-card">
+                
+                <h3 class="benefit-title">Community Network</h3>
+                <p class="benefit-text">
+                    Connect with other artisans worldwide to share techniques, resources, and experiences.
+                </p>
+            </div>
+        </div>
+        
+       
+        <div class="application-section">
+            <h2 class="section-title">How to Join</h2>
+            
+            <div class="application-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Submit Your Application</h3>
+                        <p class="step-text">
+                            Complete our simple online form with details about your craft and upload photos of your work.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Review Process</h3>
+                        <p class="step-text">
+                            Our team will review your application within 5-7 business days to ensure it meets our quality standards.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Onboarding</h3>
+                        <p class="step-text">
+                            If approved, we'll guide you through setting up your artisan profile and preparing your first listings.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Start Selling</h3>
+                        <p class="step-text">
+                            Once live, your products will be visible to our global customer base and you can begin receiving orders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-container">
+                <h2 style="font-size: 24px; color: #FFFFFF; margin-bottom: 30px; text-align: center;">Artisan Application Form</h2>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location" class="form-label">Location (City, Country)</label>
+                        <input type="text" id="location" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="craft" class="form-label">Type of Craft</label>
+                        <input type="text" id="craft" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience" class="form-label">Years of Experience</label>
+                        <input type="number" id="experience" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="story" class="form-label">Tell Us About Your Craft</label>
+                        <textarea id="story" class="form-input" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="portfolio" class="form-label">Portfolio Link or Photos (Google Drive/Dropbox)</label>
+                        <input type="text" id="portfolio" class="form-input" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </div>
+        </div>
+        
+      
+        <div class="testimonial-section">
+            <h2 class="section-title">Hear From Our Artisans</h2>
+            
+            <div class="testimonial-card">
+                <img src="./pexels-canan-yasar-11679605-6196392.jpg" alt="Rekha" class="testimonial-image">
+                <p class="testimonial-text">
+                    "Before ArtisanMarket, I struggled to sell my weavings beyond my local village. Now I have customers across three continents and have been able to train five young women in our traditional techniques, ensuring they won't be lost."
+                </p>
+                <div>
+                    <div class="testimonial-name"></div>
+                    <div class="testimonial-location">Textile Artist, UttarPradesh</div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

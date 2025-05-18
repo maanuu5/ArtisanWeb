@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArtisanMarket - Artisans</title>
+        <link rel="stylesheet" href="landingstyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #121212;
+                font-family: 'Inter', sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #FFFFFF;
+            }
+            
+            .artisan-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                margin: 50px auto;
+                max-width: 1200px;
+                padding: 0 20px;
+            }
+            
+            .artisan-card {
+                background-color: #2F2F2F;
+                border-radius: 15px;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .artisan-image {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+            
+            .artisan-name {
+                font-size: 20px;
+                font-weight: 600;
+                color: #FFFFFF;
+                margin-bottom: 5px;
+            }
+            
+            .artisan-location {
+                font-size: 14px;
+                color: #EAB308;
+                margin-bottom: 10px;
+            }
+            
+            .artisan-description {
+                font-size: 14px;
+                color: #CCCCCC;
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="display: flex;justify-content: space-between;align-items: center;margin-top: -30px;margin-left: 20px;vertical-align: middle;">
+            <h6 style="font-size: x-large;color: #FFFFFF;">ArtisanMarket</h6>
+            <div style="display: flex;color:#FFFFFF;">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <div class="navbuttons" style="padding: 20px;">
+                        Home
+                    </div>
+                </a>
+                <a href="artisans.html" style="text-decoration: none; color: inherit;">
+                    <div class="navbuttons" style="padding: 20px;">
+                        Feature Artisans
+                    </div>
+                </a>
+                <a href="products.html" style="text-decoration: none; color: inherit;">
+                    <div class="navbuttons" style="padding: 20px;">
+                        Products
+                    </div>
+                </a>
+                <div class="navbuttons" style="padding: 20px;">
+                    How It Works
+                </div>
+                <div class="navbuttons" style="padding: 20px;">
+                    Impact
+                </div>
+                <div class="navbuttons" style="padding: 20px;">
+                    Join As Artisan
+                </div>
+                <div class="navbuttons" style="padding: 20px; border: 2px dotted #EAB308;border-radius: 40px;display: inline-block;">
+                    Contact
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;flex-direction: column;align-items: center;">
+        <h1 class="page-title">Our Artisans</h1>
+        <p class="page-subtitle">Meet the talented artisans connected with ArtisanMarket</p>
+    </div>
+        <div class="artisan-grid">
+            <div class="artisan-card">
+                <img src="./pexels-anastasia-shuraeva-8749771.jpg" alt="Arpit Bala" class="artisan-image">
+                <div class="artisan-name">Zara</div>
+                <div class="artisan-location">Peru</div>
+                <div class="artisan-description">Traditional weaver specializing in alpaca wool textiles.</div>
+            </div>
+            
+            <div class="artisan-card">
+                <img src="./pexels-canan-yasar-11679605-6196392.jpg" alt="Rishu" class="artisan-image">
+                <div class="artisan-name">Rishu</div>
+                <div class="artisan-location">India</div>
+                <div class="artisan-description">Wood carving artist known for intricate rosewood designs.</div>
+            </div>
+            
+            <div class="artisan-card">
+                <img src="./pexels-ebrubodyy-18181976.jpg" alt="Aisha Mohammed" class="artisan-image">
+                <div class="artisan-name">Aisha Mohammed</div>
+                <div class="artisan-location">Kashmir</div>
+                <div class="artisan-description">Textile artist specializing in pashmina shawls.</div>
+            </div>
+            
+            <div class="artisan-card">
+                <img src="./pexels-oktay-koseoglu-42034955-30644182.jpg" alt="Fatima Zahra" class="artisan-image">
+                <div class="artisan-name">Fatima Zahra</div>
+                <div class="artisan-location">Kashmir</div>
+                <div class="artisan-description">Ceramic artist known for hand-painted geometric patterns.</div>
+            </div>
+            
+            <div class="artisan-card">
+                <img src="./pexels-padli-2912170.jpg" alt="Mohan" class="artisan-image">
+                <div class="artisan-name">Mohan</div>
+                <div class="artisan-location">Maharashtra</div>
+                <div class="artisan-description">Jewelry maker specializing in sterling silver filigree.</div>
+            </div>
+            
+            <div class="artisan-card">
+                <img src="./pexels-tkirkgoz-12764428.jpg" alt="Madhav" class="artisan-image">
+                <div class="artisan-name">Madhav</div>
+                <div class="artisan-location">Goa</div>
+                <div class="artisan-description">Wood carver known for traditional ceremonial masks.</div>
+            </div>
+            
+            <div class="artisan-card">
+                <img src="./pexels-oktay-koseoglu-42034955-30644182.jpg" alt="Naresh" class="artisan-image">
+                <div class="artisan-name">Naresh</div>
+                <div class="artisan-location">Ranchi</div>
+                <div class="artisan-description">Basket weaver using locally harvested sisal fiber.</div>
+            </div>
+            
+            <div class="artisan-card">
+                <img src="./pexels-ebrubodyy-18181976.jpg" alt="Manisha" class="artisan-image">
+                <div class="artisan-name">Manisha</div>
+                <div class="artisan-location">Meghalaya</div>
+                <div class="artisan-description">Textile artist specializing in backstrap-loomed designs.</div>
+            </div>
+            
+            <div class="artisan-card">
+                <img src="./pexels-canan-yasar-11679605-6196392.jpg" alt="Harish" class="artisan-image">
+                <div class="artisan-name">Harish</div>
+                <div class="artisan-location">Arunachal Pradesh</div>
+                <div class="artisan-description">Potter known for hand-thrown tea bowls.</div>
+            </div>
+            
+            <div class="artisan-card">
+                <img src="./pexels-padli-2912170.jpg" alt="Rekha" class="artisan-image">
+                <div class="artisan-name">Rekha</div>
+                <div class="artisan-location">Uttar Pradesh</div>
+                <div class="artisan-description">Textile artist specializing in traditional weaving techniques.</div>
+            </div>
+        </div>
+        
+        <div style="display: flex; justify-content: center; margin: 50px 0 80px;">
+            <button style="border-radius: 70px; padding: 15px 30px; font-size: 17px; background: none; color: #FFFFFF; cursor: pointer; border: 2px dotted #EAB308;">Load More Artisans</button>
+        </div>
+        
+        <hr style="border: 1px; width:100%; border:2px dotted #f4a460; margin-top: 30px;">
+    </body>
+</html>

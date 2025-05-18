@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArtisanMarket - Products</title>
+        <link rel="stylesheet" href="landingstyles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #121212;
+                font-family: 'Inter', sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #FFFFFF;
+            }
+            
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                margin: 50px auto;
+                max-width: 1200px;
+                padding: 0 20px;
+            }
+            
+            .product-card {
+                background-color: #2F2F2F;
+                border-radius: 15px;
+                
+            }
+            
+            .product-image {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+            
+            .product-details {
+                padding: 20px;
+            }
+            
+            .product-title {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                color: #FFFFFF;
+            }
+            
+            .product-artisan {
+                font-size: 14px;
+                color: #EAB308;
+                margin-bottom: 10px;
+            }
+            
+            .product-description {
+                font-size: 14px;
+                color: #CCCCCC;
+                margin-bottom: 15px;
+                line-height: 1.5;
+            }
+            
+            .product-price {
+                font-size: 18px;
+                font-weight: 600;
+                color: #FFFFFF;
+                margin-bottom: 15px;
+            }
+            
+            .buy-button {
+                background-color: #EAB308;
+                color: #FFFFFF;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 30px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            
+            .buy-button:hover {
+                background-color: #F59E0B;
+            }
+            
+            .category-filters {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin: 30px 0;
+                flex-wrap: wrap;
+            }
+            
+            .category-button {
+                background: none;
+                color: #FFFFFF;
+                border: 2px solid #EAB308;
+                padding: 8px 20px;
+                border-radius: 30px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            
+            .category-button:hover, .category-button.active {
+                background-color: #EAB308;
+            }
+            
+            .page-title {
+                text-align: center;
+                font-size: 36px;
+                font-weight: 700;
+                margin: 70px 0 10px;
+                color: #FFFFFF;
+            }
+            
+            .page-subtitle {
+                text-align: center;
+                font-size: 16px;
+                color: #CCCCCC;
+                margin-bottom: 30px;
+            }
+            
+            .origin-badge {
+                display: inline-block;
+                background-color: #121212;
+                padding: 5px 10px;
+                border-radius: 20px;
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+            
+            .product-meta {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 15px;
+            }
+            .buy-now-button {
+                background-color: #FF5733;
+                color: #FFFFFF;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 30px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                margin-left: 10px;
+            }
+            
+            .buy-now-button:hover {
+                background-color: #C70039;
+            }
+        </style>
+    </head>
+    <body>
+      
+        <div style="display: flex;justify-content: space-between;align-items: center;margin-top: -30px;margin-left: 20px;vertical-align: middle;">
+
+            <h6 style="font-size: x-large;color: #FFFFFF;">ArtisanMarket</h6>
+        <div style="display: flex;color:#FFFFFF;">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                <div class="navbuttons" style="padding: 20px;">
+                    Home
+                </div>
+            </a>
+        <div class="navbuttons" style="padding: 20px;">
+            Feature Artisans
+        </div>
+       
+        <div  class="navbuttons" style="padding: 20px;">
+            Products
+        </div>
+
+        
+        <div class="navbuttons" style="padding: 20px;">
+            How It Works
+        </div>
+        <div class="navbuttons" style="padding: 20px;">
+            Impact
+        </div>
+        <div class="navbuttons" style="padding: 20px;">
+            Join As Artisan
+        </div>
+        <div class="navbuttons" style="padding: 20px; border: 2px dotted #EAB308;border-radius: 40px;display: inline-block;">
+            Contact
+        </div>
+    </div>
+    </div>
+        
+        
+        <h1 class="page-title">Handcrafted Treasures</h1>
+        <p class="page-subtitle">Unique artisan-made products from around the world</p>
+        
+       
+        <div class="category-filters">
+            <button class="category-button active">All Products</button>
+            <button class="category-button">Textiles</button>
+            <button class="category-button">Pottery & Ceramics</button>
+            <button class="category-button">Woodwork</button>
+            <button class="category-button">Jewelry</button>
+            <button class="category-button">Home Decor</button>
+        </div>
+        
+        
+        <div class="product-grid">
+         
+            <div class="product-card">
+                <img src="./1111111111.jpeg" alt="Hand-woven Peruvian Textile" class="product-image">
+                <div class="product-details">
+                    <span class="origin-badge">Peru</span>
+                    <h3 class="product-title">Hand-woven Alpaca Textile</h3>
+                    <div class="product-artisan">By Arpit Bala</div>
+                    <p class="product-description">Intricately designed alpaca wool textile using ancient Peruvian weaving techniques passed down through generations.</p>
+                    <div class="product-meta">
+                        <div class="product-price">Rs 1300</div>
+                        <button class="buy-button">Add to Cart</button>
+                        <a href="buy.html" class="buy-now-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+          
+            <div class="product-card">
+                <img src="./222222222222222222.jpg" alt="Handcrafted Wooden Bowl" class="product-image">
+                <div class="product-details">
+                    <span class="origin-badge">India</span>
+                    <h3 class="product-title">Rosewood Carved Bowl</h3>
+                    <div class="product-artisan">By Rishu</div>
+                    <p class="product-description">Hand-carved from sustainably harvested rosewood with traditional motifs representing prosperity and abundance.</p>
+                    <div class="product-meta">
+                        <div class="product-price">Rs 1200</div>
+                        <button class="buy-button">Add to Cart</button>
+                        <a href="buy.html" class="buy-now-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="product-card">
+                <img src="./333333333333.jpg" alt="Kashmir Hand-Embroidered Shawl" class="product-image">
+                <div class="product-details">
+                    <span class="origin-badge">Kashmir</span>
+                    <h3 class="product-title">Pashmina Embroidered Shawl</h3>
+                    <div class="product-artisan">By Aisha Mohammed</div>
+                    <p class="product-description">Luxurious pashmina shawl featuring intricate hand embroidery in traditional Kashmiri patterns.</p>
+                    <div class="product-meta">
+                        <div class="product-price">Rs 1100</div>
+                        <button class="buy-button">Add to Cart</button>
+                        <a href="buy.html" class="buy-now-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+          
+            <div class="product-card">
+                <img src="./444444444444.jpg" alt="Ceramic Vase" class="product-image">
+                <div class="product-details">
+                    <span class="origin-badge">Kashmir</span>
+                    <h3 class="product-title">Handpainted Ceramic Vase</h3>
+                    <div class="product-artisan">By Fatima Zahra</div>
+                    <p class="product-description">Wheel-thrown ceramic vase with vibrant hand-painted geometric patterns using natural mineral pigments.</p>
+                    <div class="product-meta">
+                        <div class="product-price">Rs 2000</div>
+                        <button class="buy-button">Add to Cart</button>
+                        <a href="buy.html" class="buy-now-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+      
+            <div class="product-card">
+                <img src="./55555555555.jpg" alt="Handmade Silver Jewelry" class="product-image">
+                <div class="product-details">
+                    <span class="origin-badge">Maharashtra</span>
+                    <h3 class="product-title">Sterling Silver Filigree Earrings</h3>
+                    <div class="product-artisan">By Mohan</div>
+                    <p class="product-description">Delicate sterling silver earrings crafted using the traditional filigree technique native to Oaxaca.</p>
+                    <div class="product-meta">
+                        <div class="product-price">Rs 1300</div>
+                        <button class="buy-button">Add to Cart</button>
+                        <a href="buy.html" class="buy-now-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+         
+            <div class="product-card">
+                <img src="./6666666666666666.jpeg" alt="Hand-carved Wooden Mask" class="product-image">
+                <div class="product-details">
+                    <span class="origin-badge">Goa</span>
+                    <h3 class="product-title">Traditional Wooden Mask</h3>
+                    <div class="product-artisan">By Madhav</div>
+                    <p class="product-description">Hand-carved ceremonial mask made from locally sourced wood with symbols representing strength and wisdom.</p>
+                    <div class="product-meta">
+                        <div class="product-price">Rs 2100</div>
+                        <button class="buy-button">Add to Cart</button>
+                        <a href="buy.html" class="buy-now-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+     
+            <div class="product-card">
+                <img src="./777777777777.jpeg" alt="Hand-woven Basket" class="product-image">
+                <div class="product-details">
+                    <span class="origin-badge">Ranchi</span>
+                    <h3 class="product-title">Sisal Peace Basket</h3>
+                    <div class="product-artisan">By Naresh</div>
+                    <p class="product-description">Meticulously woven basket using locally harvested sisal fiber with patterns symbolizing unity and reconciliation.</p>
+                    <div class="product-meta">
+                        <div class="product-price">Rs 1400</div>
+                        <button class="buy-button">Add to Cart</button>
+                        <a href="buy.html" class="buy-now-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+  
+            <div class="product-card">
+                <img src="./888888888888.jpeg" alt="Hand-loomed Textile" class="product-image">
+                <div class="product-details">
+                    <span class="origin-badge">Meghalaya</span>
+                    <h3 class="product-title">Handloomed Table Runner</h3>
+                    <div class="product-artisan">By Manisha</div>
+                    <p class="product-description">Vibrant backstrap-loomed textile featuring intricate geometric patterns inspired by Mayan culture.</p>
+                    <div class="product-meta">
+                        <div class="product-price">Rs 2499</div>
+                        <button class="buy-button">Add to Cart</button>
+                        <a href="buy.html" class="buy-now-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            
+   
+            <div class="product-card">
+                <img src="./999999999999.jpg" alt="Clay Pottery" class="product-image">
+                <div class="product-details">
+                    <span class="origin-badge">Arunachal Pradesh</span>
+                    <h3 class="product-title">Wabi-Sabi Tea Bowl</h3>
+                    <div class="product-artisan">By Harish</div>
+                    <p class="product-description">Hand-thrown tea bowl embodying the Japanese aesthetic of finding beauty in imperfection. Each piece is unique.</p>
+                    <div class="product-meta">
+                        <div class="product-price">Rs 1899</div>
+                        <button class="buy-button">Add to Cart</button>
+                        <a href="buy.html" class="buy-now-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div style="display: flex; justify-content: center; margin: 50px 0 80px;">
+            <button style="border-radius: 70px; padding: 15px 30px; font-size: 17px; background: none; color: #FFFFFF; cursor: pointer; border: 2px dotted #EAB308;">Load More Products</button>
+        </div>
+        
+  
+        <hr style="border: 1px; width:100%; border:2px dotted #f4a460; margin-top: 30px;">
+        
+       
+    </body>
+</html>

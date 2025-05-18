@@ -1,0 +1,384 @@
+<html>
+    <head>
+        <title>Join ArtisanMarket - For Artisans</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                background-color: #121212;
+                color: #FFFFFF;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .navbuttons {
+                cursor: pointer;
+                transition: color 0.3s;
+            }
+            
+            .navbuttons:hover {
+                color: #EAB308;
+            }
+            
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            .header {
+                text-align: center;
+                margin: 60px 0;
+            }
+            
+            h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+            
+            .accent {
+                color: #EAB308;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+                max-width: 700px;
+                margin: 0 auto;
+                color: #CCCCCC;
+            }
+            
+            .process-step {
+                display: flex;
+                align-items: center;
+                margin-bottom: 80px;
+            }
+            
+            .step-number {
+                background-color: #EAB308;
+                color: #121212;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 28px;
+                font-weight: bold;
+                margin-right: 30px;
+                flex-shrink: 0;
+            }
+            
+            .step-content {
+                flex-grow: 1;
+            }
+            
+            .step-title {
+                font-size: 24px;
+                margin-bottom: 10px;
+                color: #EAB308;
+            }
+            
+            .step-description {
+                font-size: 16px;
+                line-height: 1.6;
+                color: #CCCCCC;
+            }
+            
+            .step-image {
+                width: 400px;
+                height: 250px;
+                background-color: #2F2F2F;
+                border-radius: 10px;
+                margin-left: 30px;
+                object-fit: cover;
+            }
+            
+            .cta-container {
+                text-align: center;
+                margin: 80px 0;
+            }
+            
+            .cta-button {
+                background-color: #EAB308;
+                color: #121212;
+                border: none;
+                padding: 15px 40px;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: transform 0.3s;
+            }
+            
+            .cta-button:hover {
+                transform: scale(1.05);
+            }
+            
+            .benefits {
+                display: flex;
+                justify-content: space-between;
+                margin: 60px 0;
+                gap: 30px; 
+            }
+            
+            .benefit-card {
+                background-color: #2F2F2F;
+                border-radius: 15px;
+                padding: 30px;
+                width: 30%;
+                text-align: center;
+            }
+            
+            .benefit-title {
+                font-size: 20px;
+                margin-bottom: 15px;
+                color: #EAB308;
+            }
+            
+            .benefit-description {
+                font-size: 15px;
+                line-height: 1.5;
+                color: #CCCCCC;
+            }
+            
+            .faq-section {
+                margin: 60px 0;
+            }
+            
+            .faq-title {
+                text-align: center;
+                font-size: 32px;
+                margin-bottom: 40px;
+            }
+            
+            .faq-item {
+                background-color: #2F2F2F;
+                border-radius: 10px;
+                padding: 25px;
+                margin-bottom: 15px;
+            }
+            
+            .faq-question {
+                font-size: 18px;
+                margin-bottom: 15px;
+                color: #EAB308;
+                font-weight: 600;
+            }
+            
+            .faq-answer {
+                font-size: 16px;
+                line-height: 1.6;
+                color: #CCCCCC;
+            }
+            
+            .separator {
+                border: 2px dotted #f4a460;
+                margin: 50px 0;
+            }
+            
+            .success-stories {
+                margin: 60px 0;
+                text-align: center;
+            }
+            
+            .success-story-container {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px; 
+            }
+            
+            .success-story {
+                width: 32%;
+                background-color: #2F2F2F;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div style="display: flex;justify-content: space-between;align-items: center;margin-top: -20px;margin-left: 20px;margin-right: 5px;">
+            <h6 style="font-size: x-large;color: #FFFFFF;">ArtisanMarket</h6>
+        <div style="display: flex;color:#FFFFFF;">
+        <div class="navbuttons" style="padding: 20px;">
+            Featured Artisans
+        </div>
+        <a href="products.html" style="text-decoration: none; color: inherit;">
+            <div class="navbuttons" style="padding: 20px;">
+                Products
+            </div>
+        </a>
+        
+        <div class="navbuttons" style="padding: 20px;">
+            How It Works
+        </div>
+        <a href="impact.html" style="text-decoration: none; color: inherit;">
+            <div class="navbuttons" style="padding: 20px;">
+                Impact
+            </div>
+        </a>
+        <a href="join.html" style="text-decoration: none; color: inherit;">
+            <div class="navbuttons" style="padding: 20px;">
+                Join As Artisan
+            </div>
+        </a>
+        <div class="navbuttons" style="padding: 20px; border: 2px dotted #EAB308;border-radius: 40px;display: inline-block;">
+            Contact
+        </div>
+        <a href="getlisted.html" style="text-decoration: none;color:inherit">
+        <div class="navbuttons" style="padding: 20px; border: 2px dotted #EAB308;border-radius: 40px;display: inline-block;">
+            Get Listed!!
+        </div>
+    </a>
+    </div>
+    </div>
+        
+        <div class="container">
+            <div class="header">
+                <h1>Join Our <span class="accent">Global Artisan</span> Community</h1>
+                <p class="subtitle">Share your craft with the world and earn fair compensation for your traditional artistry. Follow these simple steps to get started on ArtisanMarket.</p>
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">Create Your Artisan Profile</h3>
+                    <p class="step-description">Tell your story and share your crafting journey. Complete your profile with information about your traditions, techniques, and the cultural significance of your craft. Upload clear photos of yourself at work and your workshop to build trust with customers.</p>
+                </div>
+                <img src="./pro.png" alt="Create Profile" class="step-image">
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">Verification Process</h3>
+                    <p class="step-description">Our team reviews your application to ensure authenticity and quality standards. We may schedule a video call to learn more about your craft techniques and verify your workshop. This step typically takes 3-5 business days as we carefully review each application.</p>
+                </div>
+                <img src="./verify.jpg" alt="Verification Process" class="step-image">
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">Product Photography Guidelines</h3>
+                    <p class="step-description">Learn how to showcase your products effectively with our photography guidelines. We'll help you capture high-quality images that highlight the craftsmanship and details of your work. You can also request our photography service in select regions for professional product shots.</p>
+                </div>
+                <img src="./productphoto.jpg" alt="Product Photography" class="step-image">
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3 class="step-title">List Your Products</h3>
+                    <p class="step-description">Upload detailed information about each product, including materials, dimensions, creation process, and cultural significance. Set your own prices, keeping in mind our fair trade principles. Our platform suggests pricing based on labor, materials, and market research to ensure fair compensation.</p>
+                </div>
+                <img src="./listinng.jpeg" alt="List Products" class="step-image">
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3 class="step-title">Manage Orders & Shipping</h3>
+                    <p class="step-description">Receive notifications when customers place orders. Package items carefully following our guidelines for safe international shipping. Print shipping labels directly from our platform and track deliveries. We handle customs documentation to make shipping simple for you.</p>
+                </div>
+                <img src="./fulfilling-orders-illustration.jfif" alt="Manage Orders" class="step-image">
+            </div>
+            
+            <div class="process-step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <h3 class="step-title">Receive Payments</h3>
+                    <p class="step-description">Get paid securely through our platform. Choose from multiple payment methods including bank transfers, mobile payments, or community payment centers in remote areas. Payments are processed within 3 business days of order delivery, with no hidden fees or complicated processes.</p>
+                </div>
+                <img src="./recievw.avif" alt="Receive Payments" class="step-image">
+            </div>
+            
+            <div class="separator"></div>
+            
+            <div class="benefits">
+                <div class="benefit-card">
+                    <h3 class="benefit-title">Global Reach</h3>
+                    <p class="benefit-description">Connect with customers from over 50 countries who value authentic handcrafted items and are willing to pay fair prices for quality craftsmanship.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3 class="benefit-title">Fair Compensation</h3>
+                    <p class="benefit-description">Set your own prices and receive 85% of each sale. Our transparent fee structure means you always know exactly what you'll earn.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3 class="benefit-title">Skills Development</h3>
+                    <p class="benefit-description">Access training programs, digital skills workshops, and preservation of traditional techniques through our artisan community initiatives.</p>
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <button class="cta-button">Apply to Join ArtisanMarket</button>
+            </div>
+            
+            <div class="faq-section">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">What types of artisans can join ArtisanMarket?</h4>
+                    <p class="faq-answer">We welcome traditional craftspeople working in textiles, ceramics, woodwork, metalwork, jewelry making, and other traditional crafts. Our focus is on handmade items that reflect cultural heritage and traditional techniques.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Are there any fees to join the platform?</h4>
+                    <p class="faq-answer">There is no fee to apply or maintain your profile. We only charge a 15% commission on completed sales, which covers payment processing, marketing, and platform maintenance.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">How long does the verification process take?</h4>
+                    <p class="faq-answer">Typically 3-5 business days. For artisans in remote areas, we work with local community centers to facilitate the verification process and can accommodate different communication methods.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">What kind of support do you provide for shipping internationally?</h4>
+                    <p class="faq-answer">We provide shipping labels, customs documentation assistance, packaging guidelines, and discounted shipping rates through our partnerships with global carriers. We also offer training on international shipping best practices.</p>
+                </div>
+            </div>
+            
+            <div class="success-stories">
+                <h2 style="color: #EAB308;">Artisan Success Stories</h2>
+                <p style="color: #CCCCCC; max-width: 700px; margin: 0 auto 40px auto;">See how joining ArtisanMarket has transformed the lives of craftspeople around the world</p>
+                
+                <div class="success-story-container">
+                    <div class="success-story">
+                        <img src="./Pabiben-with-her-team.jpg" alt="Success Story" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 20px;">
+                            <h3 style="color: #EAB308; margin-top: 0;">Maya Patel, Gujarat</h3>
+                            <p style="color: #CCCCCC; line-height: 1.6;">After joining ArtisanMarket, Maya's textile business grew by 300%, allowing her to hire five women from her village and preserve traditional block printing techniques.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="success-story">
+                        <img src="./pexels-ozgur-ozkan-288576-848205.jpg" alt="Success Story" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 20px;">
+                            <h3 style="color: #EAB308; margin-top: 0;">Ravi Verma, Rajasthan</h3>
+                            <p style="color: #CCCCCC; line-height: 1.6;">Ravi has established a sustainable business selling traditional woven textiles, allowing him to support his family while teaching his children the weaving techniques of their ancestors.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="success-story">
+                        <img src="./pexels-ebrubodyy-18181976.jpg" alt="Success Story" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 20px;">
+                            <h3 style="color: #EAB308; margin-top: 0;">Fatima Begum, Uttar Pradesh</h3>
+                            <p style="color: #CCCCCC; line-height: 1.6;">Through ArtisanMarket, Fatima's pottery cooperative now reaches customers in 15 countries, increasing their income and preserving their community's pottery traditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="separator"></div>
+            
+            <div style="text-align: center; margin: 60px 0;">
+                <h2 style="color: #EAB308; margin-bottom: 30px;">Ready to Share Your Craft with the World?</h2>
+                <button class="cta-button">Begin Your Application</button>
+                <p style="color: #CCCCCC; margin-top: 30px;">Need help? Contact our artisan support team at <span style="color: #EAB308;">artisans@artisanmarket.com</span></p>
+            </div>
+        </div>
+    </body>
+</html>
